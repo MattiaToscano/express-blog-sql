@@ -18,6 +18,9 @@ app.get('/', (req, res) => {
     res.send('Ciao, se mi leggi va tutto bene!');
 })
 
+app.use('/blog', blogRouter);
+
+
 
 //Metto il server in ascolto sulla porta 3000
 app.listen(port, () => {
