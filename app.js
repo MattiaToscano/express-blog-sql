@@ -2,6 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
+//middleware
+app.use(express.json());
+
+//Definisco gli asset statici
+app.use(express.static('public'));
+
 //Inserisco la rotta base
 app.get('/', (req, res) => {
     console.log('Richiesta ricevuta');
