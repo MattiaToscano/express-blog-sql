@@ -3,6 +3,9 @@ const app = express();
 const port = 3000;
 
 
+//importo il router
+const blogRouter = require('./routers/blog');
+
 //middleware
 app.use(express.json());
 
