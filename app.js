@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+//Inserisco la rotta base
+app.get('/', (req, res) => {
+    console.log('Richiesta ricevuta');
+    res.send('Ciao, se mi leggi va tutto bene!');
+})
+
 
 //Metto il server in ascolto sulla porta 3000
 app.listen(port, () => {
